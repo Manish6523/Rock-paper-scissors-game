@@ -1,0 +1,148 @@
+* {
+    cursor: default;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #0cacfcfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    position: relative;
+}
+.res{
+    margin: 19px;
+
+}
+.main {
+    height: 60vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    background-color: #7ad3fffd;
+}
+
+.btn {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn>span {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000fd;
+}
+
+.Rock,.Paper,.Scissors {
+    border: none;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid #7ad3fffd;
+    transition: border 0.2s ease-in-out;
+}
+
+.Rock {
+    background: url("img/rock.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Paper {
+    background: url("img/paper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Scissors {
+    background: url("img/scissors.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+button:hover {
+    border: 5px solid #0cacfc;
+}
+.red{
+    color: red;
+    background-color: green;
+}
+.green{
+    color: green;
+    background-color: red;
+}
+
+.mainScore{
+    display: flex;
+}
+
+#tryagain{
+    color: orangered;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.lasan{
+    background-color: #7ad3fffd;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.computer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    font-weight: bold;
+    width: 100vw;
+    height: 150px;
+    transition: 0.5s all ease-in-out;
+}
+.computer{
+    position: absolute;
+    bottom: -150px;
+}
+.computer>.compimg{
+    height: 90%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    /* justify-content: center; */
+}
+.compimg > img{
+    margin: 0 10px;
+    height: 90%;
+    border: 2px solid black;
+    width: 120px;
+    border-radius: 150px;
+    object-fit: cover;
+}
